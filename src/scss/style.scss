@@ -1,16 +1,52 @@
-// variavel
+// Setting
 $color-azul-escuro: #041f8f;
+$color-azul-muitoescuro: #303d63;
 $color-azul-claro: #0285c9;
 $color-paragraph: #84888c;
 $color-white: #fff;
+$color-azul-muito-claro: #f6f9fc;
+
+// tools
+@mixin button {
+  align-items: center;
+  border-radius: 5px;
+  color: $color-white;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
 // base
 body {
   font-family: Roboto, sans-serif;
 }
 
 // Object
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 25px;
+  vertical-align: middle;
+  width: 25px;
+}
+
+.icon-arrow-right {
+  background-image: url(../img/vector.png);
+  margin-top: -4px;
+}
+.icon-arrow-right-white {
+  background-image: url(../img/vector-white.png);
+  margin-top: -4px;
+}
+
 .color-azul-escuro {
   color: $color-azul-escuro;
+}
+
+.color-azul-muitoescuro {
+  color: $color-azul-muitoescuro;
 }
 .color-azul-claro {
   color: $color-azul-claro;
@@ -19,8 +55,15 @@ body {
 .color-pragraph {
   color: $color-paragraph;
 }
+
+.white {
+  color: $color-white;
+}
 .background-azul-claro {
   background-color: $color-azul-claro;
+}
+.background-azul-escuro {
+  background-color: $color-azul-escuro;
 }
 
 .font-bold {
@@ -36,17 +79,22 @@ body {
   line-height: 26px;
 }
 
-.button {
-  align-items: center;
-  border-radius: 5px;
-  color: $color-white;
+.linkClick {
   font-size: 16px;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  line-height: 19px;
-  text-align: center;
+  line-height: 20px;
   text-transform: uppercase;
+}
+
+.max-1320 {
+  max-width: 1320px;
+  margin: auto;
+  @media (min-width: 768px) {
+    border-radius: 6px;
+  }
+}
+.button {
+  @include button;
+
   width: 100%;
   @media (min-width: 768px) {
     max-width: 256px;
@@ -55,7 +103,7 @@ body {
 
 // components
 .reembolsos {
-  & .reembolsos__img {
+  .reembolsos__img {
     @media (max-width: 768px) {
       margin-top: 41px;
       margin-bottom: 21px;
@@ -65,26 +113,25 @@ body {
       max-width: 700px;
     }
   }
-  & .title {
+  .title {
     font-size: 42px;
     @media (max-width: 768px) {
       font-size: 32px;
       margin-bottom: 14px;
     }
   }
-  & .paragraph {
+  .paragraph {
     @media (max-width: 768px) {
       margin-bottom: 15px;
     }
   }
-  & .reembolsos__text {
+  .reembolsos__text {
     width: 100%;
     max-width: 505px;
   }
-  & .reembolsos__text__24 {
-    font-size: 16px;
-    line-height: 28px;
+  .reembolsos__text__24 {
     margin-top: 10px;
+
     @media (max-width: 768px) {
       text-align: center;
     }
@@ -106,4 +153,130 @@ body {
     @media (max-width: 768px) {
       margin-bottom: 29px;
     }
+  }
+}
+
+.organizar-reembolsos {
+  margin-top: 41px;
+  @media (min-width: 768px) {
+    margin-top: 135.99px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .container {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: flex-end;
+      height: 500px;
+    }
+  }
+  .organizar-reembolsos__img {
+    img {
+      @media (min-width: 768px) {
+        bottom: 0;
+        height: 630px;
+        position: absolute;
+        width: 547px;
+      }
+    }
+  }
+  .organizar-reembolsos__text {
+    padding-top: 15px;
+    margin-bottom: 25px;
+    .linkClick {
+      @media (min-width: 768px) {
+        @include button;
+        background-color: $color-azul-escuro;
+        max-width: 256px;
+      }
+    }
+  }
+}
+
+.reduzir-gastos {
+  background-color: $color-azul-muito-claro;
+  padding-top: 58px;
+  padding-bottom: 40px;
+  @media (min-width: 768px) {
+    padding-top: 80px;
+  }
+
+  .reduzir-gastos__header {
+    .paragraph {
+      margin: 20px auto 14px;
+      max-width: 600px;
+    }
+  }
+
+  .reduzir-gastos__itens {
+    .reduzir-gastos__itens__item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        margin-bottom: 34.17px;
+      }
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.vantagens {
+  padding: 20px 0 27px;
+  @media (min-width: 768px) {
+    padding: 80px 0 50px;
+  }
+  .vantagens__grid {
+    display: grid;
+    grid-template-columns: minmax(100px, 256px) minmax(100px, 256px);
+    gap: 20px;
+
+    .vantagens__grid__img {
+      align-items: center;
+      border: 2px solid #f6f9fc;
+      box-sizing: border-box;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      @media (min-width: 768px) {
+        gap: 30px;
+        padding: 35px;
+      }
+      img {
+        width: 100%;
+        max-width: 156px;
+      }
+    }
+  }
+}
+
+.gestao {
+  background-image: url("../img/fundo-gestao.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 36px;
+  padding: 44px 0 30px;
+
+  @media (min-width: 768px) {
+    padding: 70px 0 68px;
+  }
+
+  .gestao__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .paragraph {
+      margin: 30px auto;
+    }
+    .button {
+      margin-bottom: 17px;
+    }
+  }
 }
