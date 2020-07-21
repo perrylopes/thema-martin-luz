@@ -1,0 +1,109 @@
+// variavel
+$color-azul-escuro: #041f8f;
+$color-azul-claro: #0285c9;
+$color-paragraph: #84888c;
+$color-white: #fff;
+// base
+body {
+  font-family: Roboto, sans-serif;
+}
+
+// Object
+.color-azul-escuro {
+  color: $color-azul-escuro;
+}
+.color-azul-claro {
+  color: $color-azul-claro;
+}
+
+.color-pragraph {
+  color: $color-paragraph;
+}
+.background-azul-claro {
+  background-color: $color-azul-claro;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 37px;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.button {
+  align-items: center;
+  border-radius: 5px;
+  color: $color-white;
+  font-size: 16px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  @media (min-width: 768px) {
+    max-width: 256px;
+  }
+}
+
+// components
+.reembolsos {
+  & .reembolsos__img {
+    @media (max-width: 768px) {
+      margin-top: 41px;
+      margin-bottom: 21px;
+    }
+    @media (min-width: 768px) {
+      width: 100% !important;
+      max-width: 700px;
+    }
+  }
+  & .title {
+    font-size: 42px;
+    @media (max-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+  }
+  & .paragraph {
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  & .reembolsos__text {
+    width: 100%;
+    max-width: 505px;
+  }
+  & .reembolsos__text__24 {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
+
+.controle-gastos {
+  .controle-gastos__box-azul {
+    background: url("../img/fundo-azul.png");
+    border-radius: 6px;
+    padding-bottom: 50%;
+    width: 100%;
+    @media (max-width: 768px) {
+      margin-top: 29.77px;
+      margin-bottom: 39.43px;
+    }
+  }
+  & .paragraph {
+    @media (max-width: 768px) {
+      margin-bottom: 29px;
+    }
+}
