@@ -33,11 +33,11 @@ body {
 }
 
 .icon-arrow-right {
-  background-image: url(../img/vector.png);
+  background-image: url("./img/vector.png");
   margin-top: -4px;
 }
 .icon-arrow-right-white {
-  background-image: url(../img/vector-white.png);
+  background-image: url("./img/vector-white.png");
   margin-top: -4px;
 }
 
@@ -140,7 +140,8 @@ body {
 
 .controle-gastos {
   .controle-gastos__box-azul {
-    background: url("../img/fundo-azul.png");
+    background: url("./img/fundo-azul.png");
+    cursor: pointer;
     border-radius: 6px;
     padding-bottom: 50%;
     width: 100%;
@@ -304,7 +305,7 @@ body {
 }
 
 .gestao {
-  background-image: url("../img/fundo-gestao.png");
+  background-image: url("./img/fundo-gestao.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -335,6 +336,8 @@ body {
   }
   .posts-item {
     position: relative;
+    display: flex;
+    justify-content: center;
     .posts-item__title {
       bottom: 50px;
       color: #fff;
@@ -362,5 +365,26 @@ body {
     .util-list__item {
       margin: 8px;
     }
+  }
+}
+
+.modal-video {
+  display: flex;
+  align-items: center;
+  background-color: #ffffffb3;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .modal-video__content {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  .close.js-close {
+    font-size: 50px;
   }
 }

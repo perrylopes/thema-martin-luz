@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thema Martin Luz</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/ml-style.css" />
-  <body>
-    
+<?php  
+    get_header();
+  ?>
     <main>
       <section class="container reembolsos">
         <div class="row">
           <div class="col-12 col-md-6 reembolsos__img order-md-2">
-            <img class="img-fluid" src="/dist/img/large-Header_3d_3 1.png" alt="Imagem Reembolsos">
+            <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/img/large-Header_3d_3 1.png" alt="Imagem Reembolsos">
           </div>
           <div class="col-12 col-md-6 reembolsos__text align-self-center col-md order-md-1">
             <h2 class="title color-azul-escuro"><strong>Reembolsos corporativos de forma simples e rápida.</strong> Como deve ser.</h2>
@@ -31,8 +23,8 @@
       <section class="container controle-gastos">
         <div class="row">
           <div class="col-12 col-md-7">
-            <div class="controle-gastos__box-azul">
-              <img> 
+            <div class="controle-gastos__box-azul js-controle-gastos">
+              
             </div>
           </div>
           <div class="col-12 col-md-5 align-self-center" >
@@ -52,7 +44,7 @@
                 <div class="linkClick white font-bold">Peça já a sua proposta<span class="icon icon-arrow-right-white d-md-none"></span></div>
               </div>
               <div class="col-12 col-md-6 organizar-reembolsos__img">
-                <img class="img-fluid" src="/dist/img/bpp_corp_reembolso1-1.png" alt="Imagem Organizar Reembolsos">
+                <img class="img-fluid" src="<?php bloginfo('template_url'); ?>/img/bpp_corp_reembolso1-1.png" alt="Imagem Organizar Reembolsos">
               </div>
           </div>
         </div>
@@ -75,7 +67,7 @@
 
               <article class=" col-12 col-md-4 reduzir-gastos__itens__item">
                 <header>
-                  <img src="./img/img-rapidez.png" alt="Imagem Rapidez">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-rapidez.png" alt="Imagem Rapidez">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Mais rapidez na gestão das suas despesas</h1>
                 <p class="paragraph color-pragraph">Para que seu negócio cresça de maneira inteligente e rápida, substitua os processos demorados de reembolsos, aprovações, criação de relatórios e etc. por uma plataforma que te oferece tudo isso de forma rápida e digital.</p>
@@ -83,7 +75,7 @@
 
               <article class=" col-12  col-md-4 reduzir-gastos__itens__item">
                 <header>
-                  <img src="./img/img-relatorio.png" alt="Imagem Relatorio">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-relatorio.png" alt="Imagem Relatorio">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Organize todos os seus comprovantes</h1>
                 <p class="paragraph color-pragraph">Recebendo os comprovantes de gastos de seus colaboradores através da plataforma, você não precisa mais guardar comprovantes e notas fiscais em lugar nenhum. Os gastos podem ser classificados por tipo ou por projeto, da forma que você precisar.</p>
@@ -91,7 +83,7 @@
 
               <article class=" col-12  col-md-4 reduzir-gastos__itens__item">
                 <header>
-                  <img src="./img/img-organize.png" alt="Imagem Organize">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-organize.png" alt="Imagem Organize">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Mais rapidez na gestão das suas despesas</h1>
                 <p class="paragraph color-pragraph">Para que seu negócio cresça de maneira inteligente e rápida, substitua os processos demorados de reembolsos, aprovações, criação de relatórios e etc. por uma plataforma que te oferece tudo isso de forma rápida e digital.</p>
@@ -99,7 +91,7 @@
 
               <article class=" col-12  col-md-4 reduzir-gastos__itens__item">
                 <header>
-                  <img src="./img/img-apresente.png" alt="Imagem Organize">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-apresente.png" alt="Imagem Organize">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Apresente suas despesas com um só clique </h1>
                 <p class="paragraph color-pragraph">Enviar seus comprovantes é mais simples do que você imagina. Basta que o colaborador tire uma foto do cupom fiscal com seu smartphone através do aplicativo BPP Card. O gestor das despesas pode aprovar ou reprovar aquele gasto através do App</p>
@@ -107,7 +99,7 @@
 
               <article class=" col-12  col-md-4 reduzir-gastos__itens__item">
                 <header class="pt-4">
-                  <img src="./img/img-controle.png" alt="Imagem Organize">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-controle.png" alt="Imagem Organize">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Controle seus gastos com cartões pré-pagos VISA</h1>
                 <p class="paragraph color-pragraph">Os cartões pré-pago BPP Corp são fáceis de controlar: o colaborador só gasta o que a empresa disponibiliza para compras online ou em lojas físicas. Conte com cartões VISA aceitos em mais de 30 milhões de estabelecimentos no mundo todo, incluindo sites e aplicativos!</p>
@@ -115,7 +107,7 @@
 
               <article class=" col-12  col-md-4 reduzir-gastos__itens__item">
                 <header class="pt-4">
-                  <img src="./img/img-conta-digital.png" alt="Imagem Organize">
+                  <img src="<?php bloginfo('template_url'); ?>/img/img-conta-digital.png" alt="Imagem Organize">
                 </header>
                 <h1 class="title color-azul-muitoescuro font-bold">Conta digital gratuita e exclusiva para sua empresa */
                 </h1>
@@ -143,16 +135,16 @@
             <div class="col-12 col-md-7 order-md-1 ">
               <div class="vantagens__grid">
                 <div class="vantagens__grid__img">
-                  <img src="./img/burguer-king.png" alt="Imagem Burguer King" >
+                  <img src="<?php bloginfo('template_url'); ?>/img/burguer-king.png" alt="Imagem Burguer King" >
                 </div>
                 <div class="vantagens__grid__img">
-                  <img src="./img/o-boticario.png" alt="Imagem O boticário " >
+                  <img src="<?php bloginfo('template_url'); ?>/img/o-boticario.png" alt="Imagem O boticário " >
                 </div>
                 <div class="vantagens__grid__img">
-                  <img src="./img/cacauShow.png" alt="Imagem CacauShow" >
+                  <img src="<?php bloginfo('template_url'); ?>/img/cacauShow.png" alt="Imagem CacauShow" >
                 </div>
                 <div class="vantagens__grid__img">
-                  <img src="./img/pague-menos.png" alt="Imagem Pague Menos" >
+                  <img src="<?php bloginfo('template_url'); ?>/img/pague-menos.png" alt="Imagem Pague Menos" >
                 </div>
               </div>
             </div>
@@ -175,7 +167,7 @@
           <div class="row">
             <div class="col-12 col-md-6  ">
               <div class="decida__line decida-grid">
-                <img  class="decida__img" src="./img/dinheiro-papel.png" alt="Imagem Dinheiro Papel">
+                <img  class="decida__img" src="<?php bloginfo('template_url'); ?>/img/dinheiro-papel.png" alt="Imagem Dinheiro Papel">
                 <span class="decida__title color-pragraph">Dinheiro em papel</span>
                 <ul class="decida__list color-pragraph ">
                   <li> Saque de dinheiro em papel para as despesas</li>
@@ -189,7 +181,7 @@
             
             <div class="col-12 col-md-6 decida-grid">
               <div class="decida-grid">
-                <img  class="decida__img" src="./img/bpp.png" alt="Imagem Dinheiro Papel">
+                <img  class="decida__img" src="<?php bloginfo('template_url'); ?>/img/bpp.png" alt="Imagem Dinheiro Papel">
                 <span class="decida__title color-azul-muitoescuro">BPP Corp</span>
                 <ul class="decida__list color-azul-muitoescuro font-bold">
                   <li>Faça pagamentos com o BPP Corp sem precisar tirar dinheiro</li>
@@ -235,14 +227,36 @@
           </div>
             
           <div class="row posts">
+            <?php 
+                  $argsPost = array(
+                    'post_type' => 'post',
+                    'post_per_page' => '3',
+                    'order'     => 'DESC',
+                  );
+                  $query = new WP_Query ($argsPost);
+            
+            
+                  if($query->have_posts()) : 
+                      while($query->have_posts()):
+                        $query->the_post();
+            ?>
             <article class="posts-item col-12 col-md-4 mb-3">
-              <a href="http://">
-                <img class="img-fluid" src="./img/fundo-posts.png" alt="">
+              <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail("post-thumbnail",array('class'=>'img-fluid rounded')) ?>
+                <!-- <img class="img-fluid" src="" alt=""> -->
                 <div class="posts-item__title">
-                  <span>apenas duas linhas de texto no blog para padronizar os cards</span>
+                  <span>
+                    <?php the_title() ?>
+                  </span>
                 </div>
               </a>  
             </article>
+           <?php
+                 endwhile;
+              endif;
+
+              wp_reset_query();
+           ?>
            
         </div>
       </div>
@@ -256,10 +270,10 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="util-list">
-              <img class="util-list__item" src="./img/triste.png" alt="">
-              <img class="util-list__item" src="./img/meio-triste.png" alt="">
-              <img class="util-list__item" src="./img/feliz.png" alt="">
-              <img class="util-list__item" src="./img/muitofeliz.png" alt="">
+              <img class="util-list__item" src="<?php bloginfo('template_url'); ?>/img/triste.png" alt="">
+              <img class="util-list__item" src="<?php bloginfo('template_url'); ?>/img/meio-triste.png" alt="">
+              <img class="util-list__item" src="<?php bloginfo('template_url'); ?>/img/feliz.png" alt="">
+              <img class="util-list__item" src="<?php bloginfo('template_url'); ?>/img/muitofeliz.png" alt="">
             </div>
           </div>
         </div>
@@ -270,12 +284,7 @@
 
     </main>
 
-   
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/ml-script-min.js"></script>
-  </body>
-</html>
+    
+<?php
+ get_footer();
 
